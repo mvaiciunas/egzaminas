@@ -1,0 +1,71 @@
+$icons-color: #E27866;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section5 {
+
+  height: 592px;
+
+  .top {
+    text-align: center;
+
+    img {
+      width: 64px;
+      height: 2px;
+      margin: 26px 0;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-top: 99px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .container {
+  @include flex-center;
+  flex-direction: row;
+  margin-left: 210px;
+  margin-right: 230px;
+  
+  .fa-brands, .fa-solid {
+    color: $icons-color;
+    padding: 17px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 3.3em;
+    border: 1px solid $icons-color;
+    border-radius: 50%;
+    margin-top: 65px;
+    margin-bottom: 49px;
+  }
+  
+  .part1, .part2, .part3 {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 97px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 27px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #86878B;
+  }
+ }  
+}

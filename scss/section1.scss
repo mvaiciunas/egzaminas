@@ -1,0 +1,139 @@
+.section1 {
+  min-height: 639px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: url("../images/photo-1480714378408-67cf0d13bc1b.png");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  margin-top: 72px;
+  padding: 0 150px;
+
+  h2 {
+    max-width: 426px;
+    font-size: 36px;
+    color: white;
+    margin: 22px 0;
+    
+  }
+
+  p {
+    max-width: 651px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 43px;
+  }
+
+  button {
+    cursor: url(/app/images/description-cursor-icon-with-shadow-32.png), auto;
+    width: 135px;
+    height: 42px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+  }
+
+  form {
+    width: 360px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin: 75px 148px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px #00000029;
+    z-index: 2;
+
+    label {
+      font-size: 9px;
+      font-weight: bold;
+      margin-right: 17px;
+    }
+
+    input[type="text"] {
+      border: none;
+      border-bottom: 1px solid #D8D8D8;
+      margin: 0 51px;
+    }
+
+    ::placeholder {
+      font-family: Montserrat;
+      font-size: 12px;
+      color: #D8D8D8;
+    }
+
+    input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 13px;
+      height: 13px;
+      position: relative;
+      top: 3px;
+      border: 1px solid #41D395;
+      border-radius: 50%;      
+    }
+    
+    input[type="radio"]::before {
+      position: absolute;
+      left: 2.7px;
+      top: 2.7px;
+      content: "";
+      width: 50%;
+      height: 50%;
+      background: #41D395;
+      border-radius: 50%;
+      opacity: 0;
+    }
+
+    input[type="radio"]:checked::before {
+      opacity: 1;
+    }
+
+    input[type="radio"],
+    input[type="radio"] + label {
+      cursor: url(/app/images/description-cursor-icon-with-shadow-32.png), auto;
+    }  
+
+    .radio-input {
+      display: flex;
+      flex-direction: row;
+      margin-left: 51px;     
+    }
+
+
+    h3 {
+      cursor: url(/app/images/description-cursor-icon-with-shadow-32.png), auto;
+      height: 57px;
+      text-align: center;
+      line-height: 3em;
+      background-color: #F5F5F5;
+      color: #333333;
+      border-radius: 5px 5px 0 0;
+    }
+
+
+    h3:last-of-type {
+      background-color: #41D395;
+      color: white;
+      border-radius: 0 0 5px 5px;
+    }
+
+    h4 {
+      color: #1C1C1C;
+      margin-left: 51px;
+    }
+
+    span {
+      color: #E27866;
+    }
+  }
+
+  .logo {
+    width: 247px;
+    height: 108px;
+    margin-top: 66px;
+  }
+}
