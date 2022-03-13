@@ -1,0 +1,268 @@
+
+@media (min-width: 921px) and (max-width: 1300px){
+    nav {
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .section1 {
+        p {
+            display: none;
+        }
+
+        .divider {
+            display: none;
+        }
+    }
+
+    .section3 {
+        p {
+            display: none;
+        }
+    }
+
+    .section4 {
+        height: 660px;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 920px){
+    main {
+        min-width: 450px;
+    }
+
+    nav {
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            display: none;
+        }
+
+        .divider {
+            display: none;
+        }
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+
+        .text {
+            display: none;
+        }
+    }
+
+    .section3 {
+        p {
+            display: none;
+        }
+    }
+
+    .section4 {
+        height: 660px;
+
+        .left img {
+            display: none;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .section5 {
+        height: 450px;
+
+        p {
+            display: none;
+        }
+    }
+
+    .section7 {
+        
+        .swiper-button-prev, 
+        .swiper-button-next {
+            color: white;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .icons {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 350px) and (max-width: 850px) {
+    nav {
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            max-width: 360px;
+        }
+
+        p {
+            display: none;
+        }
+
+        .divider {
+            display: none;
+        }
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+
+        .text {
+            display: none;
+        }
+    }
+
+    .section3 {
+        min-width: 430px;
+        margin: 0 auto;
+
+        .left, .middle {
+            display: none;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    .section4 {
+        height: 725px;
+            
+        .left img {
+            display: none;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .section5 {
+        height: 850px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        p {
+            display: none;
+        }
+    }
+
+    .section6 {
+        height: 1000px;
+
+        .tabs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -70px;
+            padding: -108px;
+        }
+
+        .tabTop {
+            margin-bottom: 20px;
+        }
+
+        .line {
+            display: none;
+        }
+
+        ul {
+            display: none;
+        }
+
+    }
+
+    .section7 {
+        
+        .swiper-button-prev, 
+        .swiper-button-next {
+            color: white;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .icons {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 349px){
+nav {
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

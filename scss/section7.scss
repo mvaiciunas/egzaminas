@@ -1,0 +1,83 @@
+$chat-color: #6696E2;
+
+.section7 {
+  height: 591px;
+  background-color: #FFFFFF;
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 67px;
+    margin-bottom: 31px;
+  }
+
+  .img {
+    width: 64px;
+    height: 2px;
+    background: $chat-color;
+    margin: auto;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+    p {
+      width: 230px;
+      padding: 20px;
+      background: $chat-color;
+      color: white;
+      border-radius: 8px;
+      position: relative;
+      margin-bottom: 19px;
+    }
+
+    p:before {
+      position: absolute;
+      content: "";
+      bottom: -20px;
+      left: 25px;
+      border: 10px solid transparent;
+      border-top-color: $chat-color;
+    }
+
+    img {
+      float: left;
+      margin-right: 17px;
+      margin-bottom: 86px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #333333;
+      margin-top: 35px;
+    }
+
+    h5 {
+      font-size: 14px;
+      font-weight: normal;
+      color: #86878B;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    border: 1.5px solid #E27866;
+    background: white;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #E27866;
+  }
+
+  .swiper-button-prev {
+    color: $chat-color;
+  }
+
+  .swiper-button-next {
+    color: $chat-color;
+  }
+}

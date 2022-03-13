@@ -1,0 +1,106 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.section8 {
+  height: 573px;
+  background-color: #E27866;
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 36px;
+    color: white;
+    padding: 70px 0;
+  }
+
+  p {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+  }
+
+  form {
+    width: 390px;
+    height: 314px;
+    @include flex-column;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 33px 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px #00000029;
+
+    label {
+      font-size: 9px;
+      font-weight: bold;
+      margin-right: 17px;
+      opacity: 50%;
+    }
+
+    input[type="text"] {
+      border: none;
+      border-bottom: 1px solid #D8D8D8;
+      margin: 0 51px;
+    }
+
+    ::placeholder {
+      font-family: Montserrat;
+      font-size: 12px;
+      color: #1C1C1C;
+    }
+
+    input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 13px;
+      height: 13px;
+      position: relative;
+      top: 3px;
+      border: 1px solid #41D395;
+      border-radius: 50%;      
+    }
+    
+    input[type="radio"]::before {
+      position: absolute;
+      left: 2.7px;
+      top: 2.7px;
+      content: "";
+      width: 50%;
+      height: 50%;
+      background: #41D395;
+      border-radius: 50%;
+      opacity: 0;
+    }
+
+    input[type="radio"]:checked::before {
+      opacity: 1;
+    }
+
+    input[type="radio"],
+    input[type="radio"] + label {
+      cursor: url(/app/images/description-cursor-icon-with-shadow-32.png), auto;
+    }  
+
+    .radio-input {
+      display: flex;
+      flex-direction: row;
+      margin-left: 51px;     
+    }
+
+    button {
+      cursor: url(/app/images/description-cursor-icon-with-shadow-32.png), auto;
+      font-size: 15px;
+      width: 158px;
+      height: 48px;
+      background: #41D395;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      margin: 0 auto;
+    }
+  }
+}

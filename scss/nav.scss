@@ -1,0 +1,46 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #1C1C1C;
+  padding-left: 148px;
+  z-index: 1;
+
+  a {  
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 44px;
+  opacity: 0.69;
+  position: relative;
+  }
+
+  i {
+    cursor: url(/app/images/description-cursor-icon-with-shadow-32.png), auto;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    transition: transform 0.3s;
+  }
+
+  .rotate {
+    transform: rotate(-90deg);
+  }
+
+  .block {
+    display: block;
+  }
+
+  .anchors {
+    padding: 0 296px 0 0;
+  }
+ 
+  .selected {
+    border-bottom: 2px solid #E27866;
+    opacity: 1;
+  }
+}

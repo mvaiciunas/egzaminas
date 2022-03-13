@@ -1,0 +1,66 @@
+$text-color: white;
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 {
+  height: 595px;
+  background-image: url("/app/images/christoffer-engstrom-503481-unsplash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  .container {
+    height: 595px;
+    @include flex-center;
+    margin-left: 172px;
+    margin-right: 148px;
+  }
+
+  .left div {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    background: #A37169;
+    color: $text-color;
+    text-align: center;
+    line-height: 6.5em;
+    margin-bottom: 21px;
+    
+    h4 {
+    font-size: 14px;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    opacity: 0.5;
+    }
+  }
+
+  .left div:first-of-type {
+    background: #E27866;
+
+    h4 {
+      opacity: 1;
+    }
+    
+  }
+
+  .middle {
+    margin: 0 50px;
+
+    h2 {
+      font-size: 36px;
+      color: $text-color;
+      margin-top: 35px;
+      margin-bottom: 33px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
+}
